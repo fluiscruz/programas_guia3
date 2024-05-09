@@ -12,3 +12,5 @@ clear
 echo "Datos ingresados exitosamente!"
 echo "Nombre:" $name
 echo "Edad:" $edad
+echo ""
+echo "*By: Luis Cruz"
