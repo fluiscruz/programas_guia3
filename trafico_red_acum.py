@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import matplotlib.pyplot as plt
-fuente=open("./tmp/datos","r")
+fuente=open("./tmp/tmp","r")
 x=[]
 y=[]
 cont=[]
@@ -19,9 +19,9 @@ for linea in fuente.readlines()[1:]:
 
 plt.plot(cont,y,"r")
 plt.xlabel('tiempo (s)')
-plt.ylabel('Wireless RX (KByte)')
-plt.title('Monitor de Tráfico GNU/Linux')
+plt.ylabel('Acumulated Wireless RX (KByte)')
+plt.title('Monitor de Tráfico Acumulado GNU/Linux')
 plt.grid(True)
-plt.savefig("rx_traffic.png")
+plt.savefig("rx_traffic_acum.png")
 plt.show()
 fuente.close()
